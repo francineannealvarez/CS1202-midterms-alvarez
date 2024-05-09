@@ -99,7 +99,7 @@ def rent_game(username, free=False):
     try:
         game_choice = input("Enter the number corresponding to the game you want to rent: ")
         if not game_choice.strip():  # Check if input is blank
-            print("Transaction canceled.")
+            print("Canceled.")
             logged_in_menu(username)
             return
         game_choice = int(game_choice)
@@ -144,7 +144,7 @@ def return_game(username):
     try:
         game_choice = input("Enter the number corresponding to the game you want to return: ")
         if not game_choice.strip():  # Check if input is blank
-            print("Transaction canceled.")
+            print("Canceled.")
             logged_in_menu(username)
             return
         game_choice = int(game_choice)
